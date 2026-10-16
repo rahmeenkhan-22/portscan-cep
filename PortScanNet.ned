@@ -11,12 +11,14 @@ network PortScanNet
     parameters:
         int numVictims = default(3);
     submodules:
+        client: StandardHost;
         configurator: Ipv4NetworkConfigurator;
         attacker: StandardHost;
         gateway: Router;
         switch: EthernetSwitch;
         victim[numVictims]: StandardHost;
     connections:
+        gateway.ethg++ <--> Eth100M <--> client.ethg++;
         attacker.ethg++ <--> Eth100M <--> gateway.ethg++;
         gateway.ethg++ <--> Eth100M <--> switch.ethg++;
         for i=0..numVictims-1 {
