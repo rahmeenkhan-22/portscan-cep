@@ -17,19 +17,36 @@ Open (listening) TCP ports: 80, 443, 22
 App: TcpBasicClientApp, sends requests to victim[0] port 80
 Starts at 1s. Used for scenario (a) and as the base for scenario (e).
 
-## Attacker module: PortScanner (Person A)
+## Attacker module: PortScanner (Person A) - IMPLEMENTED
+Files: PortScanner.ned, PortScanner.h, PortScanner.cc (extends INET's UdpBasicApp)
 Instance: attacker.app[0].typename = "PortScanner"
-Probe type: UDP sweep. Victims have no UDP listeners, so closed ports should answer
-  with ICMP port-unreachable (to be confirmed on the first test run).
+Probe type: UDP sweep, one UDP packet per port. Victims have no UDP listeners, so
+  closed ports should answer with ICMP port-unreachable (to be confirmed).
   A TCP connect scan is an optional upgrade.
 Parameters:
-  startPort     first port to probe
-  endPort       last port to probe
+  startPort     first port to probe (default 1)
+  endPort       last port to probe (default 1024)
   scanInterval  time between probes, in seconds (small = fast scan, large = stealth)
   scanMode      "sequential" | "random" | "stealth"
-  targets       (proposed) which victim(s) to scan, e.g. "victim[0]"
-  startTime     (proposed) when the scan begins, in seconds
-Random mode uses OMNeT++'s own RNG, so seeds control it.
+  destAddresses target host, e.g. "victim[0]" (inherited from UdpBasicApp).
+                Use one target for now.
+  startTime     when the scan begins, in seconds (inherited from UdpBasicApp)
+Scan modes:
+  sequential    ports in ascending order, fixed scanInterval
+  random        ports in shuffled order, fixed scanInterval
+  stealth       ports in shuffled order, each gap jittered to 0.5x - 1.5x of
+                scanInterval (set scanInterval high for a real stealth run)
+Random order and jitter use OMNeT++'s own RNG, so seeds control them.
+Scalars recorded by the attacker: probesSent, scanEndTime
+Example config:
+  **.attacker.numApps = 1
+  **.attacker.app[0].typename = "PortScanner"
+  **.attacker.app[0].destAddresses = "victim[0]"
+  **.attacker.app[0].startTime = 5s
+  **.attacker.app[0].startPort = 1
+  **.attacker.app[0].endPort = 100
+  **.attacker.app[0].scanInterval = 0.05s
+  **.attacker.app[0].scanMode = "sequential"
 
 ## Detector module: ScanDetector, on gateway (Person C)
 Placement (proposed): gateway becomes GatewayRouter (extends Router) with a
