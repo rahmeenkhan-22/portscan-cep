@@ -20,8 +20,10 @@ Starts at 1s. Used for scenario (a) and as the base for scenario (e).
 ## Attacker module: PortScanner (Person A) - IMPLEMENTED
 Files: PortScanner.ned, PortScanner.h, PortScanner.cc (extends INET's UdpBasicApp)
 Instance: attacker.app[0].typename = "PortScanner"
-Probe type: UDP sweep, one UDP packet per port. Victims have no UDP listeners, so
-  closed ports should answer with ICMP port-unreachable (to be confirmed).
+Probe type: UDP sweep, one UDP packet per port. Confirmed in a test run (100 ports,
+  scanInterval 0.05 s): all 100 probes reached victim[0] and were dropped as "no port
+  found"; replies returned to the attacker (inferred from frame sizes, ICMP
+  port-unreachable).
   A TCP connect scan is an optional upgrade.
 Parameters:
   startPort     first port to probe (default 1)
