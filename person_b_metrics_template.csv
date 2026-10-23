@@ -1,0 +1,8 @@
+﻿run_id,scenario_id,detector_enabled,scan_mode,threshold_distinct_ports,window_seconds,seed_or_repetition,scan_start_time_s,scan_end_time_s,scan_interval_s,start_port,end_port,target_or_targets,alert_generated_yes_no,first_alert_time_s,detection_time_s,max_distinct_ports_in_window,probe_count,false_positive_alert_count,result_file,notes
+S1_R1,S1,ON,normal,,5,1,,,,,,,NO,,,,,,,Draft row; confirm client traffic definition
+S2_R1,S2,OFF,fast,,5,1,,,,,,,NO,,,,,,,No detector alert expected when detector is disabled
+S3_R1,S3,ON,fast,10,5,1,,,,,,,,,,,,,,Use same scan settings as S2
+S4_R1,S4,ON,stealth,10,5,1,,,,,,,,,,,,,,Stealth interval pending confirmation
+S5_R1,S5,ON,busy_legitimate,,5,1,,,,,,,NO,,,,,,,Confirm legitimate traffic pattern
+S6_T5_R1,S6,ON,fast,5,5,1,,,,,,,,,,,,,,"Repeat for thresholds 10, 20, 40 and repetitions 2, 3"
+S7_T5_R1,S7,ON,stealth,5,5,1,,,,,,,,,,,,,,"Repeat for thresholds 10, 20, 40 and repetitions 2, 3"
