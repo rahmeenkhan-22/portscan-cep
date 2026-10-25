@@ -47,6 +47,12 @@ void PortScanner::processSend()
     else {
         scanEndTime = simTime();
     }
+    destPort = ports[nextIndex++];
+    sendPacket();
+    simtime_t dt = (lastProbeTime < 0) ? SIMTIME_ZERO : simTime() - lastProbeTime;
+    EV_INFO << "PortScanner probe " << numSent << " mode=" << scanMode
+            << " port=" << destPort << " t=" << simTime() << " dt=" << dt << "\n";
+    lastProbeTime = simTime();
 }
 
 void PortScanner::finish()

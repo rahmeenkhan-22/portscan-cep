@@ -17,6 +17,7 @@ class PortScanner : public UdpBasicApp
     std::vector<int> ports;     // probe order
     size_t nextIndex = 0;
     simtime_t scanEndTime = -1;
+    simtime_t lastProbeTime = -1;
 
     virtual void initialize(int stage) override;
     virtual void processSend() override;
