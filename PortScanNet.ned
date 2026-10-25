@@ -14,7 +14,7 @@ network PortScanNet
         client: StandardHost;
         configurator: Ipv4NetworkConfigurator;
         attacker: StandardHost;
-        gateway: Router;
+        gateway: GatewayRouter;
         switch: EthernetSwitch;
         victim[numVictims]: StandardHost;
     connections:

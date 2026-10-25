@@ -38,6 +38,11 @@ void PortScanner::processSend()
     destPort = ports[nextIndex++];      // choose this probe's destination port
     sendPacket();                       // UdpBasicApp sends one UDP packet to destPort
 
+    simtime_t dt = (lastProbeTime < 0) ? SIMTIME_ZERO : simTime() - lastProbeTime;
+    EV_INFO << "PortScanner probe " << numSent << " mode=" << scanMode
+            << " port=" << destPort << " t=" << simTime() << " dt=" << dt << "\n";
+    lastProbeTime = simTime();
+
     if (nextIndex < ports.size()) {
         // stealth adds jitter so the probes are not perfectly regular
         simtime_t gap = (scanMode == "stealth") ? scanInterval * uniform(0.5, 1.5) : scanInterval;
@@ -47,12 +52,6 @@ void PortScanner::processSend()
     else {
         scanEndTime = simTime();
     }
-    destPort = ports[nextIndex++];
-    sendPacket();
-    simtime_t dt = (lastProbeTime < 0) ? SIMTIME_ZERO : simTime() - lastProbeTime;
-    EV_INFO << "PortScanner probe " << numSent << " mode=" << scanMode
-            << " port=" << destPort << " t=" << simTime() << " dt=" << dt << "\n";
-    lastProbeTime = simTime();
 }
 
 void PortScanner::finish()

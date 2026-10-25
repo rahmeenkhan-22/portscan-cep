@@ -1,9 +1,9 @@
 # Naming Sheet: Port Scanning Detection Simulation
 
 Versions: OMNeT++ 6.3.0, INET 4.6.0
-Package: portscan
+Package: (none — all .ned files are in the project root with no package line)
 Network: PortScanNet
-Repo: <PASTE GITHUB LINK HERE>
+Repo: https://github.com/rahmeenkhan-22/portscan-cep
 Rule: use these names exactly. Ask Person A before changing anything.
 
 ## Nodes
