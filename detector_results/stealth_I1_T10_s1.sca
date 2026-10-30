@@ -1,0 +1,18 @@
+run Stealth-0-20261028-01:20:32-2412
+attr configname Stealth
+attr iterationvarsf ""
+attr runnumber 0
+scalar PortScanNet.attacker.app[0] "packets sent" 20
+scalar PortScanNet.attacker.app[0] "packets received" 0
+scalar PortScanNet.attacker.app[0] probesSent 20
+scalar PortScanNet.attacker.app[0] scanEndTime 25.40764772473
+scalar PortScanNet.attacker.app[0] packetReceived:count 0
+scalar PortScanNet.attacker.app[0] packetReceived:sum(packetBytes) 0
+scalar PortScanNet.attacker.app[0] packetSent:count 20
+scalar PortScanNet.attacker.app[0] packetSent:sum(packetBytes) 640
+scalar PortScanNet.gateway.detector firstFlagTime -1
+scalar PortScanNet.gateway.detector probesBeforeFlag -1
+scalar PortScanNet.gateway.detector flaggedSources 0
+scalar PortScanNet.gateway.detector falseFlags 0
+scalar PortScanNet.gateway.detector maxDistinctPorts 5
+scalar PortScanNet.gateway.detector clientMaxDistinctPorts 1

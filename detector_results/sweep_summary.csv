@@ -1,0 +1,61 @@
+﻿run_id,scenario_id,detector_enabled,scan_mode,threshold_distinct_ports,window_seconds,seed_or_repetition,scan_start_time_s,scan_end_time_s,scan_interval_s,start_port,end_port,target_or_targets,alert_generated_yes_no,first_alert_time_s,detection_time_s,max_distinct_ports_in_window,probe_count,false_positive_alert_count,result_file,notes
+S5_T10_s0,S5,ON,fast,10,5,0,5.0,9.95,0.05,1,100,victim[0],YES,5.50000693,0.500007,100,11,0,sweep/busy_T10_s0.sca,BusyClient config; clientMaxDistinctPorts=8
+S5_T10_s1,S5,ON,fast,10,5,1,5.0,9.95,0.05,1,100,victim[0],YES,5.50000693,0.500007,100,11,0,sweep/busy_T10_s1.sca,BusyClient config; clientMaxDistinctPorts=8
+S5_T10_s2,S5,ON,fast,10,5,2,5.0,9.95,0.05,1,100,victim[0],YES,5.50000693,0.500007,100,11,0,sweep/busy_T10_s2.sca,BusyClient config; clientMaxDistinctPorts=8
+S5_T20_s0,S5,ON,fast,20,5,0,5.0,9.95,0.05,1,100,victim[0],YES,6.00000693,1.000007,100,21,0,sweep/busy_T20_s0.sca,BusyClient config; clientMaxDistinctPorts=8
+S5_T20_s1,S5,ON,fast,20,5,1,5.0,9.95,0.05,1,100,victim[0],YES,6.00000693,1.000007,100,21,0,sweep/busy_T20_s1.sca,BusyClient config; clientMaxDistinctPorts=8
+S5_T20_s2,S5,ON,fast,20,5,2,5.0,9.95,0.05,1,100,victim[0],YES,6.00000693,1.000007,100,21,0,sweep/busy_T20_s2.sca,BusyClient config; clientMaxDistinctPorts=8
+S5_T40_s0,S5,ON,fast,40,5,0,5.0,9.95,0.05,1,100,victim[0],YES,7.00000693,2.000007,100,41,0,sweep/busy_T40_s0.sca,BusyClient config; clientMaxDistinctPorts=8
+S5_T40_s1,S5,ON,fast,40,5,1,5.0,9.95,0.05,1,100,victim[0],YES,7.00000693,2.000007,100,41,0,sweep/busy_T40_s1.sca,BusyClient config; clientMaxDistinctPorts=8
+S5_T40_s2,S5,ON,fast,40,5,2,5.0,9.95,0.05,1,100,victim[0],YES,7.00000693,2.000007,100,41,0,sweep/busy_T40_s2.sca,BusyClient config; clientMaxDistinctPorts=8
+S5_T5_s0,S5,ON,fast,5,5,0,5.0,9.95,0.05,1,100,victim[0],YES,5.25000693,0.250007,100,6,1,sweep/busy_T5_s0.sca,BusyClient config; clientMaxDistinctPorts=8
+S5_T5_s1,S5,ON,fast,5,5,1,5.0,9.95,0.05,1,100,victim[0],YES,5.25000693,0.250007,100,6,1,sweep/busy_T5_s1.sca,BusyClient config; clientMaxDistinctPorts=8
+S5_T5_s2,S5,ON,fast,5,5,2,5.0,9.95,0.05,1,100,victim[0],YES,5.25000693,0.250007,100,6,1,sweep/busy_T5_s2.sca,BusyClient config; clientMaxDistinctPorts=8
+S6_T10_s0,S6,ON,fast,10,5,0,5.0,9.95,0.05,1,100,victim[0],YES,5.50000693,0.500007,100,11,0,sweep/fast_T10_s0.sca,
+S6_T10_s1,S6,ON,fast,10,5,1,5.0,9.95,0.05,1,100,victim[0],YES,5.50000693,0.500007,100,11,0,sweep/fast_T10_s1.sca,
+S6_T10_s2,S6,ON,fast,10,5,2,5.0,9.95,0.05,1,100,victim[0],YES,5.50000693,0.500007,100,11,0,sweep/fast_T10_s2.sca,
+S6_T20_s0,S6,ON,fast,20,5,0,5.0,9.95,0.05,1,100,victim[0],YES,6.00000693,1.000007,100,21,0,sweep/fast_T20_s0.sca,
+S6_T20_s1,S6,ON,fast,20,5,1,5.0,9.95,0.05,1,100,victim[0],YES,6.00000693,1.000007,100,21,0,sweep/fast_T20_s1.sca,
+S6_T20_s2,S6,ON,fast,20,5,2,5.0,9.95,0.05,1,100,victim[0],YES,6.00000693,1.000007,100,21,0,sweep/fast_T20_s2.sca,
+S6_T40_s0,S6,ON,fast,40,5,0,5.0,9.95,0.05,1,100,victim[0],YES,7.00000693,2.000007,100,41,0,sweep/fast_T40_s0.sca,
+S6_T40_s1,S6,ON,fast,40,5,1,5.0,9.95,0.05,1,100,victim[0],YES,7.00000693,2.000007,100,41,0,sweep/fast_T40_s1.sca,
+S6_T40_s2,S6,ON,fast,40,5,2,5.0,9.95,0.05,1,100,victim[0],YES,7.00000693,2.000007,100,41,0,sweep/fast_T40_s2.sca,
+S6_T5_s0,S6,ON,fast,5,5,0,5.0,9.95,0.05,1,100,victim[0],YES,5.25000693,0.250007,100,6,0,sweep/fast_T5_s0.sca,
+S6_T5_s1,S6,ON,fast,5,5,1,5.0,9.95,0.05,1,100,victim[0],YES,5.25000693,0.250007,100,6,0,sweep/fast_T5_s1.sca,
+S6_T5_s2,S6,ON,fast,5,5,2,5.0,9.95,0.05,1,100,victim[0],YES,5.25000693,0.250007,100,6,0,sweep/fast_T5_s2.sca,
+S7_I0.5_T10_s0,S7,ON,stealth,10,5,0,5.0,15.260418461403,0.5,1,20,victim[0],NO,,,10,,0,sweep/stealth_I0.5_T10_s0.sca,clientMaxDistinctPorts=1
+S7_I0.5_T10_s1,S7,ON,stealth,10,5,1,5.0,15.203823862366,0.5,1,20,victim[0],NO,,,10,,0,sweep/stealth_I0.5_T10_s1.sca,clientMaxDistinctPorts=1
+S7_I0.5_T10_s2,S7,ON,stealth,10,5,2,5.0,14.012044400327,0.5,1,20,victim[0],YES,10.465834837086,5.465835,12,12,0,sweep/stealth_I0.5_T10_s2.sca,clientMaxDistinctPorts=1
+S7_I0.5_T20_s0,S7,ON,stealth,20,5,0,5.0,15.260418461403,0.5,1,20,victim[0],NO,,,10,,0,sweep/stealth_I0.5_T20_s0.sca,clientMaxDistinctPorts=1
+S7_I0.5_T20_s1,S7,ON,stealth,20,5,1,5.0,15.203823862366,0.5,1,20,victim[0],NO,,,10,,0,sweep/stealth_I0.5_T20_s1.sca,clientMaxDistinctPorts=1
+S7_I0.5_T20_s2,S7,ON,stealth,20,5,2,5.0,14.012044400327,0.5,1,20,victim[0],NO,,,12,,0,sweep/stealth_I0.5_T20_s2.sca,clientMaxDistinctPorts=1
+S7_I0.5_T40_s0,S7,ON,stealth,40,5,0,5.0,15.260418461403,0.5,1,20,victim[0],NO,,,10,,0,sweep/stealth_I0.5_T40_s0.sca,clientMaxDistinctPorts=1
+S7_I0.5_T40_s1,S7,ON,stealth,40,5,1,5.0,15.203823862366,0.5,1,20,victim[0],NO,,,10,,0,sweep/stealth_I0.5_T40_s1.sca,clientMaxDistinctPorts=1
+S7_I0.5_T40_s2,S7,ON,stealth,40,5,2,5.0,14.012044400327,0.5,1,20,victim[0],NO,,,12,,0,sweep/stealth_I0.5_T40_s2.sca,clientMaxDistinctPorts=1
+S7_I0.5_T5_s0,S7,ON,stealth,5,5,0,5.0,15.260418461403,0.5,1,20,victim[0],YES,7.679209740743,2.67921,10,6,0,sweep/stealth_I0.5_T5_s0.sca,clientMaxDistinctPorts=1
+S7_I0.5_T5_s1,S7,ON,stealth,5,5,1,5.0,15.203823862366,0.5,1,20,victim[0],YES,7.572984033061,2.572984,10,6,0,sweep/stealth_I0.5_T5_s1.sca,clientMaxDistinctPorts=1
+S7_I0.5_T5_s2,S7,ON,stealth,5,5,2,5.0,14.012044400327,0.5,1,20,victim[0],YES,7.623325157008,2.623325,12,6,0,sweep/stealth_I0.5_T5_s2.sca,clientMaxDistinctPorts=1
+S7_I1_T10_s0,S7,ON,stealth,10,5,0,5.0,25.520836922805,1.0,1,20,victim[0],NO,,,6,,0,sweep/stealth_I1_T10_s0.sca,clientMaxDistinctPorts=1
+S7_I1_T10_s1,S7,ON,stealth,10,5,1,5.0,25.40764772473,1.0,1,20,victim[0],NO,,,5,,0,sweep/stealth_I1_T10_s1.sca,clientMaxDistinctPorts=1
+S7_I1_T10_s2,S7,ON,stealth,10,5,2,5.0,23.024088800653,1.0,1,20,victim[0],NO,,,7,,0,sweep/stealth_I1_T10_s2.sca,clientMaxDistinctPorts=1
+S7_I1_T20_s0,S7,ON,stealth,20,5,0,5.0,25.520836922805,1.0,1,20,victim[0],NO,,,6,,0,sweep/stealth_I1_T20_s0.sca,clientMaxDistinctPorts=1
+S7_I1_T20_s1,S7,ON,stealth,20,5,1,5.0,25.40764772473,1.0,1,20,victim[0],NO,,,5,,0,sweep/stealth_I1_T20_s1.sca,clientMaxDistinctPorts=1
+S7_I1_T20_s2,S7,ON,stealth,20,5,2,5.0,23.024088800653,1.0,1,20,victim[0],NO,,,7,,0,sweep/stealth_I1_T20_s2.sca,clientMaxDistinctPorts=1
+S7_I1_T40_s0,S7,ON,stealth,40,5,0,5.0,25.520836922805,1.0,1,20,victim[0],NO,,,6,,0,sweep/stealth_I1_T40_s0.sca,clientMaxDistinctPorts=1
+S7_I1_T40_s1,S7,ON,stealth,40,5,1,5.0,25.40764772473,1.0,1,20,victim[0],NO,,,5,,0,sweep/stealth_I1_T40_s1.sca,clientMaxDistinctPorts=1
+S7_I1_T40_s2,S7,ON,stealth,40,5,2,5.0,23.024088800653,1.0,1,20,victim[0],NO,,,7,,0,sweep/stealth_I1_T40_s2.sca,clientMaxDistinctPorts=1
+S7_I1_T5_s0,S7,ON,stealth,5,5,0,5.0,25.520836922805,1.0,1,20,victim[0],YES,14.472331897151,9.472332,6,10,0,sweep/stealth_I1_T5_s0.sca,clientMaxDistinctPorts=1
+S7_I1_T5_s1,S7,ON,stealth,5,5,1,5.0,25.40764772473,1.0,1,20,victim[0],NO,,,5,,0,sweep/stealth_I1_T5_s1.sca,clientMaxDistinctPorts=1
+S7_I1_T5_s2,S7,ON,stealth,5,5,2,5.0,23.024088800653,1.0,1,20,victim[0],YES,12.877143156745,7.877143,7,9,0,sweep/stealth_I1_T5_s2.sca,clientMaxDistinctPorts=1
+S7_I2_T10_s0,S7,ON,stealth,10,5,0,5.0,46.041673845611,2.0,1,20,victim[0],NO,,,3,,0,sweep/stealth_I2_T10_s0.sca,clientMaxDistinctPorts=1
+S7_I2_T10_s1,S7,ON,stealth,10,5,1,5.0,45.815295449457,2.0,1,20,victim[0],NO,,,3,,0,sweep/stealth_I2_T10_s1.sca,clientMaxDistinctPorts=1
+S7_I2_T10_s2,S7,ON,stealth,10,5,2,5.0,41.048177601304,2.0,1,20,victim[0],NO,,,4,,0,sweep/stealth_I2_T10_s2.sca,clientMaxDistinctPorts=1
+S7_I2_T20_s0,S7,ON,stealth,20,5,0,5.0,46.041673845611,2.0,1,20,victim[0],NO,,,3,,0,sweep/stealth_I2_T20_s0.sca,clientMaxDistinctPorts=1
+S7_I2_T20_s1,S7,ON,stealth,20,5,1,5.0,45.815295449457,2.0,1,20,victim[0],NO,,,3,,0,sweep/stealth_I2_T20_s1.sca,clientMaxDistinctPorts=1
+S7_I2_T20_s2,S7,ON,stealth,20,5,2,5.0,41.048177601304,2.0,1,20,victim[0],NO,,,4,,0,sweep/stealth_I2_T20_s2.sca,clientMaxDistinctPorts=1
+S7_I2_T40_s0,S7,ON,stealth,40,5,0,5.0,46.041673845611,2.0,1,20,victim[0],NO,,,3,,0,sweep/stealth_I2_T40_s0.sca,clientMaxDistinctPorts=1
+S7_I2_T40_s1,S7,ON,stealth,40,5,1,5.0,45.815295449457,2.0,1,20,victim[0],NO,,,3,,0,sweep/stealth_I2_T40_s1.sca,clientMaxDistinctPorts=1
+S7_I2_T40_s2,S7,ON,stealth,40,5,2,5.0,41.048177601304,2.0,1,20,victim[0],NO,,,4,,0,sweep/stealth_I2_T40_s2.sca,clientMaxDistinctPorts=1
+S7_I2_T5_s0,S7,ON,stealth,5,5,0,5.0,46.041673845611,2.0,1,20,victim[0],NO,,,3,,0,sweep/stealth_I2_T5_s0.sca,clientMaxDistinctPorts=1
+S7_I2_T5_s1,S7,ON,stealth,5,5,1,5.0,45.815295449457,2.0,1,20,victim[0],NO,,,3,,0,sweep/stealth_I2_T5_s1.sca,clientMaxDistinctPorts=1
+S7_I2_T5_s2,S7,ON,stealth,5,5,2,5.0,41.048177601304,2.0,1,20,victim[0],NO,,,4,,0,sweep/stealth_I2_T5_s2.sca,clientMaxDistinctPorts=1

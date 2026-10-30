@@ -1,0 +1,18 @@
+run BusyClient-0-20261030-00:10:44-13628
+attr configname BusyClient
+attr iterationvarsf ""
+attr runnumber 0
+scalar PortScanNet.attacker.app[0] "packets sent" 100
+scalar PortScanNet.attacker.app[0] "packets received" 0
+scalar PortScanNet.attacker.app[0] probesSent 100
+scalar PortScanNet.attacker.app[0] scanEndTime 9.95
+scalar PortScanNet.attacker.app[0] packetReceived:count 0
+scalar PortScanNet.attacker.app[0] packetReceived:sum(packetBytes) 0
+scalar PortScanNet.attacker.app[0] packetSent:count 100
+scalar PortScanNet.attacker.app[0] packetSent:sum(packetBytes) 3200
+scalar PortScanNet.gateway.detector firstFlagTime 5.25000693
+scalar PortScanNet.gateway.detector probesBeforeFlag 6
+scalar PortScanNet.gateway.detector flaggedSources 2
+scalar PortScanNet.gateway.detector falseFlags 1
+scalar PortScanNet.gateway.detector maxDistinctPorts 100
+scalar PortScanNet.gateway.detector clientMaxDistinctPorts 8

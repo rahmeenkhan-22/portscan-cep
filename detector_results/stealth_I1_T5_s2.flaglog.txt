@@ -1,0 +1,1 @@
+[INFO]	FLAGLOG,time=12.877143156745,sourceIp=10.0.0.5,distinctPortsSeen=6,probesBeforeFlag=9

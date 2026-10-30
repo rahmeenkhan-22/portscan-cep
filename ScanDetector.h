@@ -38,6 +38,7 @@ class ScanDetector : public SimpleModule, public NetfilterBase::HookBase
     simtime_t firstFlagTime = -1;
     long probesBeforeFlag = -1;
     int maxDistinctPorts = 0;
+    int clientMaxDistinctPorts = 0;
 
   protected:
     virtual int numInitStages() const override { return NUM_INIT_STAGES; }

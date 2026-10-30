@@ -75,6 +75,8 @@ INetfilter::IHook::Result ScanDetector::processPacket(Packet *packet, INetfilter
     int n = (int)distinct.size();
     if (n > maxDistinctPorts)
         maxDistinctPorts = n;
+    if (src != attacker && n > clientMaxDistinctPorts)
+        clientMaxDistinctPorts = n;
 
     if (!st.flagged && n > threshold) {
         st.flagged = true;
@@ -102,6 +104,7 @@ void ScanDetector::finish()
     recordScalar("flaggedSources", (double)flagRows.size());
     recordScalar("falseFlags", (double)falseFlags);
     recordScalar("maxDistinctPorts", (double)maxDistinctPorts);
+    recordScalar("clientMaxDistinctPorts", (double)clientMaxDistinctPorts);
 
     for (auto& r : flagRows)
         EV_INFO << "FLAGLOG,time=" << r.time << ",sourceIp=" << r.src
