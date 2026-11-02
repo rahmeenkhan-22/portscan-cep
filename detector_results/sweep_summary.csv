@@ -59,3 +59,9 @@ S7_I2_T40_s2,S7,ON,stealth,40,5,2,5.0,41.048177601304,2.0,1,20,victim[0],NO,,,4,
 S7_I2_T5_s0,S7,ON,stealth,5,5,0,5.0,46.041673845611,2.0,1,20,victim[0],NO,,,3,,0,sweep/stealth_I2_T5_s0.sca,clientMaxDistinctPorts=1
 S7_I2_T5_s1,S7,ON,stealth,5,5,1,5.0,45.815295449457,2.0,1,20,victim[0],NO,,,3,,0,sweep/stealth_I2_T5_s1.sca,clientMaxDistinctPorts=1
 S7_I2_T5_s2,S7,ON,stealth,5,5,2,5.0,41.048177601304,2.0,1,20,victim[0],NO,,,4,,0,sweep/stealth_I2_T5_s2.sca,clientMaxDistinctPorts=1
+S1_T10_s0,S1,ON,normal,10,5,0,,,,,,,NO,,,1,,0,sweep/normal_T10_s0.sca,Normal client traffic only; attackerProbesSent=0; clientMaxDistinctPorts=1
+S1_T10_s1,S1,ON,normal,10,5,1,,,,,,,NO,,,1,,0,sweep/normal_T10_s1.sca,Normal client traffic only; attackerProbesSent=0; clientMaxDistinctPorts=1
+S1_T10_s2,S1,ON,normal,10,5,2,,,,,,,NO,,,1,,0,sweep/normal_T10_s2.sca,Normal client traffic only; attackerProbesSent=0; clientMaxDistinctPorts=1
+S2_T10_s0,S2,OFF,fast,10,5,0,5.0,9.95,0.05,1,100,victim[0],NO,,,0,,0,sweep/off_fast_s0.sca,Detector disabled; attackerProbesSent=100; clientMaxDistinctPorts=0
+S2_T10_s1,S2,OFF,fast,10,5,1,5.0,9.95,0.05,1,100,victim[0],NO,,,0,,0,sweep/off_fast_s1.sca,Detector disabled; attackerProbesSent=100; clientMaxDistinctPorts=0
+S2_T10_s2,S2,OFF,fast,10,5,2,5.0,9.95,0.05,1,100,victim[0],NO,,,0,,0,sweep/off_fast_s2.sca,Detector disabled; attackerProbesSent=100; clientMaxDistinctPorts=0
